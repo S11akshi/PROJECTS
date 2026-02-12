@@ -16,7 +16,7 @@ st.title("📦 Shipping Performance Analytics Dashboard")
 # -----------------------------------
 # Load Cleaned Data
 # -----------------------------------
-df = pd.read_csv('/content/cleaned_data.csv')
+df = pd.read_csv('cleaned_data.csv')
 
 # Convert date column (if already datetime this won't harm)
 df['Order Date'] = pd.to_datetime(df['Order Date'])
@@ -185,3 +185,4 @@ with col2:
 st.markdown("---")
 
 st.success("Dashboard Loaded Successfully ✅")
+
